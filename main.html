@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERIE </title>
+</head>
+<body>
+    <h1>SERIE A MOSTRAR </h1>
+
+    <script type=text/javascript>
+    let a = window.prompt("CUANTOS DATOS DESPLEGARÁ:","0")
+    var n3=parseFloat(a);
+    let n1, n2, aux; 
+    if(n3<=0){
+        document.write("El numero a ingresar debe ser mayor que cero");
+    }
+    else{
+        n1=0;
+        n2=1;
+        document.write("LA SERIE ES: ");
+            for(var i=0;i<n3-1;i++){
+                aux=n2;
+                n2+=n1;
+                document.write(n2 +" ");
+                n1=aux;
+            }
+    }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+    
